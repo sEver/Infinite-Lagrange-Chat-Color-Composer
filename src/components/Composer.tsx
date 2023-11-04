@@ -5,7 +5,7 @@ export function Composer() {
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
 
-    function handleChange(event: ChangeEvent<HTMLInputElement>) {
+    function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
         let inputValue = event.target.value;
         console.log(inputValue);
         setInput(inputValue);
@@ -21,7 +21,7 @@ export function Composer() {
         <main>
             <section className="input">
                 <header>Input</header>
-                <input type="text" onChange={handleChange}></input>
+                <textarea onChange={handleChange}></textarea>
             </section>
             <section className="preview">
                 <header>Render Preview</header>

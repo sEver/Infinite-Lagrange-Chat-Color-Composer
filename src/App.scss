@@ -1,5 +1,14 @@
 .App {
+    background: #111;
+    padding: 2em;
     &-header {
         color: #666;
+        span {
+            display: inline-block;
+            &::first-letter {
+                color: #BBB;
+            }
+        }
     }
+    display: flex;
 }

@@ -1,6 +1,48 @@
 .Composer {
-    section {
-        border: 1px solid #eee;
+    border: 1px solid #444;
+    &>header {
         margin: 1em;
+        text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    section {
+
+        input, textarea {
+            box-sizing: border-box;
+            width: 100%;
+            background: #333;
+            color: #888;
+            border: 1px solid #555;
+            padding: 0.5em;
+        }
+        background: #222;
+        border: 1px solid #444;
+        font-size: 12px;
+        margin: 3em;
+        padding: 1em;
+
+        header {
+            width: 40%;
+            background: inherit;
+            border: inherit;
+            border-bottom: none;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em;
+            position: relative;            
+            top: -3em;
+            left: -1px;            
+            text-align: center;
+            color: #AAA;
+        }
+        &.input {
+            textarea {
+                height: 5em;
+            }
+        }
+        &.output {
+            input {
+            }
+        }
     }
 }
