@@ -6,7 +6,7 @@ export function Composer() {
     const [output, setOutput] = useState("");
 
     function handleChange(event: ChangeEvent<HTMLTextAreaElement>) {
-        let inputValue = event.target.value;
+        const inputValue = event.target.value;
         console.log(inputValue);
         setInput(inputValue);
         setOutput(generateOutput(inputValue));
